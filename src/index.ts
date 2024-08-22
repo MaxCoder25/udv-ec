@@ -86,7 +86,7 @@ function verificarRuc(ruc: string): boolean {
 
     const tresUltimosDigitos = auxRuc.substr(10, 3);
 
-    if (!(new RegExp(/^[0-9][0-9][1-9]$/)).test(tresUltimosDigitos)) return false;
+    if (!(new RegExp(/^[0][0][1]$/)).test(tresUltimosDigitos)) return false;
 
     const tercerDigito = auxRuc[2];
 
